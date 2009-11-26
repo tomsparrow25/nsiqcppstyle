@@ -52,29 +52,30 @@
    * If you want to rule all available rules first, just run "nsiqcppstyle -r > filefilter.txt".
    * filefilter.txt is configuration file for the friend tool [http://dev.naver.com/projects/nsiqcollector N'SIQ Collector] originally. This file is used the filter setting for selecting which file is analyzed by file name pattern matching. N'SIQ CppStyle uses N'SIQCollector filefilter.txt file for reuse the setting. In addition N'SIQ CppStyle uses ~ character to represent the applying rules in filefilter.txt.
 
- * Rules above are conflict each other. For example, RULE_4_1_A_A_use_tab_for_indent and RULE_4_1_A_B_use_space_for_indent are conflict. So you should carefully pick the rules which fit your need. 아래 보시면 맨 뒤에 window 또는 unix 라고 써 있는 경우도 있습니다. 이것이 상반된 정책들이죠.
-  * 그 다음 분석을 원하는 폴더에서 다음과 같이 실행해 주세요. 물론 해당 파일이 Path에 포함되어 있어야겠지요.
+ * Some rules above are conflict each other. For example, RULE_4_1_A_A_use_tab_for_indent and RULE_4_1_A_B_use_space_for_indent. So you should carefully pick the appropriate rules which fit your need. .
+
+ * After rule setting, run following. Of course the folder which stores nsiqcppstyle should be path.
 {{{
-nsiqcppstyle 분석을원하는폴더
+nsiqcppstyle folder_to_be_analyzed
 }}}
 
- * 그러면 줄줄이 분석 결과를 출력할 겁니다.
+ * Then, N'SIQ CppStyle outputs the analyzed result.
 
 {{{
 ======================================================================================
-Update: checking for update <== 최신 버젼이 있는 지 검사합니다. 최신 버젼이 있다면 다운로드 합니다.
+Update: checking for update 
 
 ============================ Analyzing box ===============================
 ======================================================================================
 
- * filefilter.txt 에 설정된 룰을 로드합니다. 
+ * load rule set in filefilter.txt
 
   -  RULE_10_1_A_do_not_use_bufferoverflow_risky_function_for_unix is applied. 
     ~~~
   -  RULE_9_1_A_do_not_use_hardcorded_include_path is applied.
 ======================================================================================
 
- * filefilter.txt 에 설정된 파일 필터를 출력합니다. 
+ * report filefilter.txt settings.
 
 Filter Scope "default" is applied.
 Current Filter Setting (Following is applied sequentially)
@@ -89,7 +90,7 @@ Current File extension and Language Settings
 
 ======================================================================================
 
- * 위반 항목 리스트.
+ * Violation list
 
 d:\sample\a.c(1, 5):  Do not start function name(SetGlobalAuthority) with uppercase  [RULE_3_3_A_start_function_name_with_lowercase_unix] 
 d:\sample\a.c(1, 5):  Doxygen Comment should be provided in front of function (SetGlobalAuthority) in impl file.  [RULE_5_3_A_provide_doxygen_function_comment_on_function_in_impl] 
@@ -103,19 +104,18 @@ d:\sample\utils\trunk\boxmonlog\boxmonlog.cpp(44, 3):  Do not use system depende
 
 ============================= Summary Report ==============================
 
- * 분석 결과를 리포팅 합니다.
+ 
 
- ** Total Available Rules     : 46   <== 현재 가용한 룰 개수
- ** Total Applied Rules       : 43   <== 그중 적용한 룰
- ** Total Violated Rules      : 20   <== 적용한 룰 중에 위반이 발생한 룰
- ** Total Errors Occurs       : 243  <== 총 위반 개수
- ** Total Analyzed Files      : 8    <== 총 분석한 파일 개수
- ** Total Violated Files Count: 8    <== 총 위반이 발생한 파일 개수
- ** Build Quality             : 0.00%  <== 총 파일중 위반이 발생하지 않은 파일 비율
+ ** Total Available Rules     : 46  
+ ** Total Applied Rules       : 43   
+ ** Total Violated Rules      : 20   
+ ** Total Errors Occurs       : 243  
+ ** Total Analyzed Files      : 8    
+ ** Total Violated Files Count: 8    
+ ** Build Quality             : 0.00%  <== (total analyzed files - the ratio total violated file count) / total analyzed files * 100
 
 =========================== Violated Rule Details ==========================
 
- * 룰별 위반 개수
 
  -  RULE_4_2_A_A_space_between_operators rule violated : 42
    ~~
@@ -123,7 +123,7 @@ d:\sample\utils\trunk\boxmonlog\boxmonlog.cpp(44, 3):  Do not use system depende
 
 =========================== Violated File Details ==========================
 
- * 파일별 위반 룰 개수
+
 
  -  d:\sample\utils\_service\jobqueue.h  violated in total :  5
    *  RULE_4_2_A_A_space_between_operators  :  1
@@ -135,7 +135,8 @@ d:\sample\utils\trunk\boxmonlog\boxmonlog.cpp(44, 3):  Do not use system depende
    *  RULE_5_2_C_provide_doxygen_class_comment_on_class_def  :  1
 
 }}}
- * [각종옵션들]
+
+ 
 == 파일별 분석 방법 ==
   * N'SIQ CppStyle은 파일 하나만 분석하는 것도 지원합니다. 다음과 같이 실행하시면 됩니다.
 {{{
