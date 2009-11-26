@@ -1,4 +1,5 @@
  * It's really simple
+=== How to set up the rules to be used. ===
  * Make the filefilter.txt in the root folder which contains C/C++ file and write the rules to be used in following way. You can find the lastest available rules in http://nsiqcppstyle.appspot.com/rule_doc/ or just find the rules in the rules folder in N'SIQ CppStyle isntallation.
 {{{
 	~ RULE_10_1_A_do_not_use_bufferoverflow_risky_function_for_unix
@@ -54,6 +55,7 @@
 
  * Some rules above are conflict each other. For example, RULE_4_1_A_A_use_tab_for_indent and RULE_4_1_A_B_use_space_for_indent. So you should carefully pick the appropriate rules which fit your need. .
 
+=== How to run  N'SIQ CppStyle on a folder containing C/C++ files ===
  * After rule setting, run following. Of course the folder which stores nsiqcppstyle should be path.
 {{{
 nsiqcppstyle folder_to_be_analyzed
@@ -136,7 +138,7 @@ d:\sample\utils\trunk\boxmonlog\boxmonlog.cpp(44, 3):  Do not use system depende
 }}}
 
  
-== How to analyze single file  ==
+=== How to run N'SIQ CppStyle on single C/C++ files ===
   * N'SIQ CppStyle supports single file analysis as well as folder analysis. Run following.
 {{{
 nsiqcppstyle -f file_filter_file_name file_to_be_analyzed
