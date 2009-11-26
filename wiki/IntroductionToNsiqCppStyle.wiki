@@ -3,12 +3,12 @@ It's developed to provide the internal free tool in NHN corp, Korea and the sour
 
 === Feature  ===
  * Check more than 47 rules. You can find the available rules in http://nsiqcppstyle.appspot.com
- * No complex preprocess setting(Easy to run. Jun run the tool in the specific folder.)
+ * No complex preprocess setting(Easy to run. Just run the nsiqcppstyle in the folder to be analyzed.)
  * Rule / Analysis engine separated structure.
   * Easy to add custom rules.
   * Analysis engine parses source code in heuristic way not concrete grammar. So it supports most C/C++ variations.
  * Support IDE integation.
-  * Easy to integrate in Visual Studio / Emacs / Eclipse CDT. Support standard error output format.
+  * Easy to integrate in Visual Studio / Emacs / Eclipse CDT. Support each IDE standard error output format.
  * Support CI server.
   * Support checkstyle xml output. You can use checkstyle plugin in various CI server to show N'SIQ CppStyle result.
  * Various violation suppression
