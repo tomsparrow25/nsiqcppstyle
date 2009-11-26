@@ -60,7 +60,6 @@ nsiqcppstyle folder_to_be_analyzed
 }}}
 
  * Then, N'SIQ CppStyle outputs the analyzed result.
-
 {{{
 ======================================================================================
 Update: checking for update 
