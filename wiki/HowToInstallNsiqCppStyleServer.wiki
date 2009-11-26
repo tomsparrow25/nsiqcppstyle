@@ -13,14 +13,10 @@ You can use generic N'SIQ CppStyle server or deploy your own server to support c
      + nsiqcppstyle.
 }}}
  # Get the google appengine account from http://appengine.google.com/
-
  # Install Python 2.5
-
  # Install google appengine SDK.
-
  # Modify the app.yaml file 
    application: nsiqcppstyle ==> application: new google appengine app name.
-
  # Run UpdateToAppEngine.bat in nsiqcppstylesvr
    It will repackage the nsiqcppstyle and unzip it into updatefiles folder.
    And upload the modified server content into google appengine.
@@ -29,7 +25,6 @@ You can use generic N'SIQ CppStyle server or deploy your own server to support c
 ==== Django ====
 
  # Install Django.
-
  # Please locate nsiqcppstylesvr project in the same folder which containing nsiqcppstyle source.
 {{{
    - nsiqcppstyle_all
@@ -37,10 +32,8 @@ You can use generic N'SIQ CppStyle server or deploy your own server to support c
      + nsiqcppstyle.
 }}}
  # Run ant update command. It will repackage the nsiqcppstyle and unzip it into updatefiles folder.
-
  # Run RunNsiqCppStyleSvrOnDJango.bat for test.
    test the nsiqcppstylesvr is working well by testing http://localhost:8080
-
  # Django server is only working while the current account is loggined. So you should attach apache web server in front.
    Please refer  http://docs.djangoproject.com/en/dev/howto/deployment/modpython/.
 
