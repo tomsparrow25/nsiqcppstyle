@@ -1,7 +1,7 @@
 N'SIQ CppStyle is the small tool to check C/C++ code against C/C++ coding style.
 It's developed to provide the internal free tool in NHN corp, Korea and the source code is opened in http://dev.naver.com/projects/nsiqcppstyle/.
 
-== Feature  ==
+=== Feature  ===
  * Check more than 47 rules. You can find the available rules in http://nsiqcppstyle.appspot.com
  * No complex preprocess setting(Easy to run. Jun run the tool in the specific folder.)
  * Rule / Analysis engine separated structure.
