@@ -136,9 +136,9 @@ d:\sample\utils\trunk\boxmonlog\boxmonlog.cpp(44, 3):  Do not use system depende
 }}}
 
  
-== 파일별 분석 방법 ==
-  * N'SIQ CppStyle은 파일 하나만 분석하는 것도 지원합니다. 다음과 같이 실행하시면 됩니다.
+== How to analyze single file  ==
+  * N'SIQ CppStyle supports single file analysis as well as folder analysis. Run following.
 {{{
-nsiqcppstyle -f 파일필터파일명 분석할파일명
+nsiqcppstyle -f file_filter_file_name file_to_be_analyzed
 }}}
-  * 폴더단위 분석을 할때는 해당 폴더밑에 있는 filefilter.txt 를 읽어와서 룰 셋팅을 읽을 수 있는데, 파일을 분석하는 경우에는 폴더를 지정하는 것이 아니라서, 위와 같이 직접 파일필터를 지정해 줘야 합니다.
+  * When analyzing folder, N'SIQ CppStyle read filefilter.txt under the analyzed folder. However, There is no way to automatically figure out where is filefilter.txt. So you should provide the filefilter file location, when analyzing single file.
