@@ -1,5 +1,3 @@
-=== Detail Option List ===
-
 ||-h / --help ||help||
 ||-r / --show-rules ||output the available rules ||
 ||-o output_file_name ||output file(It's only applied when you assgin --output = csv or xml). If not specified, N'SIQ CppStyle report the output named nsiqcppstyle_result.XXX in the folder to be analyzed. It's optional. However, if you want analyze multiple folder, It's mandatory.||
