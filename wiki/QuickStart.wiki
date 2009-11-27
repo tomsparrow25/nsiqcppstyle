@@ -51,7 +51,7 @@
 }}}
 
    * If you want to rule all available rules first, just run "nsiqcppstyle -r > filefilter.txt".
-   * filefilter.txt is configuration file for the friend tool [http://dev.naver.com/projects/nsiqcollector N'SIQ Collector] originally. This file is used the filter setting for selecting which file is analyzed by file name pattern matching. N'SIQ CppStyle uses N'SIQCollector filefilter.txt file for reuse the setting. In addition N'SIQ CppStyle uses '~' character to represent the applying rules in filefilter.txt.
+   * filefilter.txt is configuration file for the friend tool [http://dev.naver.com/projects/nsiqcollector N'SIQ Collector] originally. This file is used. The filter setting for selecting which file is analyzed by file name pattern matching. N'SIQ CppStyle uses N'SIQCollector filefilter.txt file for reuse the setting. In addition N'SIQ CppStyle uses '~' character to represent the applying rules in filefilter.txt.
 
  * Some rules above conflict each other. For example, RULE_4_1_A_A_use_tab_for_indent and RULE_4_1_A_B_use_space_for_indent. So you should carefully pick the appropriate rules which fit your need. .
 
@@ -138,9 +138,9 @@ d:\sample\utils\trunk\boxmonlog\boxmonlog.cpp(44, 3):  Do not use system depende
 }}}
 
  
-=== How to run N'SIQ CppStyle on single C/C++ files ===
+=== How to run N'SIQ CppStyle on single C/C++ file ===
   * N'SIQ CppStyle supports single file analysis as well as folder analysis. Run following.
 {{{
 nsiqcppstyle -f file_filter_file_name file_to_be_analyzed
 }}}
-  * When analyzing folder, N'SIQ CppStyle read filefilter.txt under the analyzed folder. However, There is no way to automatically figure out where is filefilter.txt. So you should provide the filefilter file location, when analyzing single file.
+  * When analyzing folder, N'SIQ CppStyle can find the filefilter.txt location under the analyzed folder. However, There is no way to automatically figure out where filefilter.txt is. So you should provide the filefilter file location, when analyzing single file.
