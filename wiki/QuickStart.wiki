@@ -51,12 +51,12 @@
 }}}
 
    * If you want to rule all available rules first, just run "nsiqcppstyle -r > filefilter.txt".
-   * filefilter.txt is configuration file for the friend tool [http://dev.naver.com/projects/nsiqcollector N'SIQ Collector] originally. This file is used the filter setting for selecting which file is analyzed by file name pattern matching. N'SIQ CppStyle uses N'SIQCollector filefilter.txt file for reuse the setting. In addition N'SIQ CppStyle uses ~ character to represent the applying rules in filefilter.txt.
+   * filefilter.txt is configuration file for the friend tool [http://dev.naver.com/projects/nsiqcollector N'SIQ Collector] originally. This file is used the filter setting for selecting which file is analyzed by file name pattern matching. N'SIQ CppStyle uses N'SIQCollector filefilter.txt file for reuse the setting. In addition N'SIQ CppStyle uses '~' character to represent the applying rules in filefilter.txt.
 
- * Some rules above are conflict each other. For example, RULE_4_1_A_A_use_tab_for_indent and RULE_4_1_A_B_use_space_for_indent. So you should carefully pick the appropriate rules which fit your need. .
+ * Some rules above conflict each other. For example, RULE_4_1_A_A_use_tab_for_indent and RULE_4_1_A_B_use_space_for_indent. So you should carefully pick the appropriate rules which fit your need. .
 
 === How to run  N'SIQ CppStyle on a folder containing C/C++ files ===
- * After rule setting, run following. Of course the folder which stores nsiqcppstyle should be path.
+ * After rule setting, run following. Of course the folder which stores nsiqcppstyle should be in path.
 {{{
 nsiqcppstyle folder_to_be_analyzed
 }}}
