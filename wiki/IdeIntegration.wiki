@@ -1,0 +1,1 @@
+http://translate.google.co.kr/translate?hl=ko&sl=ko&tl=en&u=http://dev.naver.com/projects/nsiqcppstyle/wiki/IDE%25ED%2586%25B5%25ED%2595%25A9%25EB%25B0%25A9%25EB%25B2%2595
