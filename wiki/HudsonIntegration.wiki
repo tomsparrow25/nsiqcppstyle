@@ -1,0 +1,9 @@
+* nsiqcppstyle supports checkstyle output. So you can you checkstyle hudson plugin to integrate nsiqcppstyle into hudson.
+
+* In you build batch, please add following 
+{{{
+   nsiqcppstyle --ci --output=xml folder_to_be_analyzed
+}}}
+
+* You can set nsiqcppstyle_result.xml file to publish hudson checkstyle output.
+
