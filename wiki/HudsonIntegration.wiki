@@ -7,3 +7,4 @@
 
 * You can set nsiqcppstyle_result.xml file to publish hudson checkstyle output.
 
+http://dev.naver.com/projects/nsiqcppstyle/wiki/Hudson%ED%86%B5%ED%95%A9%EB%B0%A9%EB%B2%95?action=download&value=pic2.png
