@@ -4,18 +4,20 @@
 
 {{{
   * FILTER_SCOPE_NAME
-  + INCLUDE_PATH_PATTERNS
-  - EXCLUDE_PATH_PATTERNS
+  + INCLUDE_PATH_STRING
+  - EXCLUDE_PATH_STRING
   ~ RULE NAME
 }}}
 
-The filter scope name is the identifier to selectively apply filter.
-In case of the quality, Maybe only main sources except test should be measured.
-Otherwise, to measure the productivity, the test code might be measured as well.
-To keep this information in the same file(filefilter.txt), you can provide the
 
-* file_scope_name before the filter configuration starts.
-You can define multiple filter scope name in the filefilter.txt.
-The included(+)/excluded(-) paths are applied sequentially from up to down
-In default, all files under target directory but under /.cvs/ and /.svn/
-will be included for analysis.
+For example, If you provide
+
+{{{
+* default
+- \
++ \src\
+- \src\test
+~ RULES....
+}}}
+
+above filefilter.txt make nsiqcppstyle analyze all source under \src\ except \src\test\.
