@@ -1,6 +1,6 @@
 == FileFilter ==
 
-* If you want to fi7lter in or out some source code files in the target directory please locate filefilter.txt file in the target directory in the form of
+* If you want to filter in or out some source code files in the target directory please locate filefilter.txt file in the target directory in the form of
 
 {{{
   * FILTER_SCOPE_NAME
